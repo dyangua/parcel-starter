@@ -1,22 +1,42 @@
-$colorFondo: peru;
 $color-1: #ffe1d1;
 $color-2: #ffdbca;
 
 body {
-  background-color: $colorFondo;
-}
-
-body {
-  overflow-x: hidden;
   font-family: Alegreya, serif;
+  background: linear-gradient(to left, $color-1, $color-2);
 }
 
-figure {
-  margin: 0;
+.header {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  align-content: center;
+  font-weight: bold;
+  font-size: 20px;
+
+  &__logo {
+    align-self: center;
+    justify-self: center;
+
+    &__letter {
+      font-size: 30px;
+      color: #6a4a39;
+    }
+  }
 }
-.container {
-  background: linear-gradient(to left, $color-1, $color-2);
-  // background: linear-gradient(to left, var(--color-1), var(--color-2));
-  max-width: 1500px;
-  margin: 0 auto;
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  opacity: 0.7;
+  list-style: none;
+
+  &-item {
+    margin: 0 47px;
+  }
+
+  &-item:last-of-type {
+    color: #ff7676;
+    border-bottom: 4px solid #f8d1be;
+  }
 }
