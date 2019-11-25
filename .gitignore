@@ -67,7 +67,6 @@ target/
 # JS
 node_modules/
 gulpfile.js
-package.json
 
 # vim
 *.swp
