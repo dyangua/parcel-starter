@@ -1,0 +1,22 @@
+$colorFondo: peru;
+$color-1: #ffe1d1;
+$color-2: #ffdbca;
+
+body {
+  background-color: $colorFondo;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: Alegreya, serif;
+}
+
+figure {
+  margin: 0;
+}
+.container {
+  background: linear-gradient(to left, $color-1, $color-2);
+  // background: linear-gradient(to left, var(--color-1), var(--color-2));
+  max-width: 1500px;
+  margin: 0 auto;
+}
